@@ -1,0 +1,140 @@
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    -webkit-transition: all 300ms ease-in;
+	   -moz-transition: all 300ms ease-in;
+	     -o-transition: all 300ms ease-in;
+	  		transition: all 300ms ease-in;
+}
+
+body{
+	padding-top: 80px;
+	background: #f8f8f8;
+}
+.navbar-default{
+	background-color: #339194;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+	color: #fff;
+	border-bottom: 4px solid #339194;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    border-bottom: 4px solid #3B4058;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #3B4058;
+	border-bottom: 4px solid #3B4058;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #fff;
+}
+.form-login{
+	max-width: 400px;
+	margin: 0 auto;
+  	padding: 0 15px;
+}
+.form-login .form-group {
+	margin-bottom: 0px;
+}
+.form-login .form-control {
+  padding: 10px;
+  font-size: 16px;
+  height: auto;
+}
+.form-login .form-group:first-of-type input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-login .form-group:nth-of-type(2) input[type="text"] {
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+.form-login .form-group input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.home-block{
+	max-width: 400px;
+	margin-top: 40px;
+}
+.add-contact{
+	float: right;
+	margin-top: 20px;
+}
+.list-contacts .contact{
+	position: relative;
+	overflow: hidden;
+}
+.list-contacts .contact p{
+	display: inline-block;
+	min-width: 50%;
+	float: left;
+}
+.list-contacts .contact .actions{
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	right: -140px;
+}
+.list-contacts .contact.on .actions{
+	right: 0px;
+}
+.list-contacts .contact .actions a{
+	height: 100%;
+	float: left;
+	border-radius: 0px;
+	line-height: 45px;
+}
+.form-user{
+	max-width: 400px;
+}
+.form-group {
+  position: relative;
+  overflow: hidden;
+}
+.form-group span{
+	position: absolute;
+	bottom: -20px;
+	right: 0px;
+	border-radius: 4px;
+	background: #000;
+	color: #fff;
+	font-size: 11px;
+	padding: 2px 4px;
+}
+.form-group.has-error span{
+	bottom: 0px;
+}
+.e404 span{
+	font-size: 10em;
+	text-align: center;
+	display: block;
+}
+.e404 .btn{
+	display: table;
+	margin: 40px auto 0 auto;
+}
+
+@media (max-width: 991px){
+	body{
+		padding-top: 50px;
+	}
+	h2.pull-left{
+		float: none !important;
+	}
+	.add-contact{
+		float: none;
+		margin-bottom: 20px;
+	}
+	.navbar .navbar-right{
+		padding: 0 15px;
+	}
+}
